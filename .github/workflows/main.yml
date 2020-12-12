@@ -29,5 +29,5 @@ jobs:
      - name: Zip Package
        run: 
          cd ${{ github.workspace }}/out
-         ls -a
+         ls 
         
