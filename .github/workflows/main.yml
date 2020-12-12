@@ -1,4 +1,4 @@
-name: Deploy master
+name: Deploy main
 on:
   workflow_dispatch:
   
@@ -6,6 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
      - uses: actions/checkout@v2
 
