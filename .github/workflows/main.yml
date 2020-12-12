@@ -1,4 +1,4 @@
-name: Deploy main
+name: Deploy_main
 on:
   workflow_dispatch:
   
@@ -28,8 +28,8 @@ jobs:
     
      - name: Zip Package
        run: 
-        cd ${{ github.workspace }}/out
-        zip -r ${{ github.workspace }}/out.zip *
+         cd ${{ github.workspace }}/out
+         zip -r ${{ github.workspace }}/out.zip *
     
           
        
