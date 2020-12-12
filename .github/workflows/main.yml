@@ -29,9 +29,5 @@ jobs:
      - name: Zip Package
        run: 
          cd ${{ github.workspace }}/out
-         zip -r ${{ github.workspace }}/out.zip *
-    
-          
-       
-     - name: Checkout source code
-       uses: actions/checkout@v1
+         ls -a
+        
