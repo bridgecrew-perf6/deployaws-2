@@ -27,7 +27,7 @@ jobs:
 
      - name: Publish
        run: dotnet publish -c Release -o '${{ github.workspace }}/out'
-            echo 'alo'
+       
        
             
      
