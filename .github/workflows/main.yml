@@ -27,7 +27,14 @@ jobs:
 
      - name: Publish
        run: dotnet publish -c Release -o '${{ github.workspace }}/out'
-     
+       
+     - name: Zip Release
+       uses: TheDoctor0/zip-release@0.4.1
+       with:
+         filename:
+           deployaws.zip
+         path: '${{ github.workspace }}/out'
+
      - name: Upload a Build Artifact
        uses: actions/upload-artifact@v2.2.1
        with:
