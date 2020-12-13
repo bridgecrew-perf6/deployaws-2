@@ -25,9 +25,9 @@ jobs:
 
      - name: Publish
        run: dotnet publish -c Release -o '${{ github.workspace }}/out'
-    
+            ls -l
      - name: Zip Package
        run: 
          cd ${{ github.workspace }}/out
-         ls 
+         ls -l
         
