@@ -27,6 +27,13 @@ jobs:
 
      - name: Publish
        run: dotnet publish -c Release -o '${{ github.workspace }}/out'
+     
+     - name: Upload a Build Artifact
+       uses: actions/upload-artifact@v2.2.1
+       with:
+          name: artifact
+          path: '${{ github.workspace }}/out' 
+    
        
        
             
