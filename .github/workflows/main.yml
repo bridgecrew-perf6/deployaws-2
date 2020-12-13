@@ -25,10 +25,6 @@ jobs:
 
      - name: Publish
        run: dotnet publish -c Release -o '${{ github.workspace }}/out'
-            ls -l
             echo 'entrou aqui'
-            cd ${{ github.workspace }}/out
-            echo 'saiu'
-            ls -l
-        
+            
      
