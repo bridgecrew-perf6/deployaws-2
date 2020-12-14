@@ -22,11 +22,11 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
 
     - name: Publish
-      run: dotnet publsh -c Release -o '${{ github.workspace }}/out
+      run: dotnet publsh -c Release -o '${{ github.workspace }}/out'
 
     - name: microsoft/variable-substitution@v1
       with:
-        files: '${{ github.workspace  }}/out/appsettings.json'
+        files: '${{ github.workspace }}/out/appsettings.json'
       env:
         ConnectionString.WebApplicationContext: "ValorExemplo"
 
