@@ -21,7 +21,6 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
 
-
     - name: Publish
       run: dotnet publsh -c Release -o '${{ github.workspace }}/out
 
@@ -31,9 +30,6 @@ jobs:
       env:
         ConnectionString.WebApplicationContext: "ValorExemplo"
 
-    - name: 'Listar Azure Web app'
-      run: cd ${{ github.workspace }}/out
-           ls -l
-           
+   
       
       
